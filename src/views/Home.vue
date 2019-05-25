@@ -4,12 +4,12 @@
       <div class="row">
         <div class="col-md-6">
           <h2>Servicios
-            <br>Outsourcing
+            <br>Digitales
             <br>& IT
           </h2>
         </div>
         <div class="col-md-6">
-          <img alt="Vue logo" class="img-fluid" src="../assets/head_vms_2.png">
+          <img alt="" class="img-fluid" src="../assets/s7.svg">
         </div>
       </div>
     </div>
@@ -20,7 +20,7 @@
           <div class="col-md-12">
             <h3>Habla con uno de nuestros ejecutivos y solicita una cotización personalizada gratis.</h3>
             <br><br><br>
-            <button>Contacto</button>
+            <router-link to="/about"><button>Contacto</button></router-link>
           </div>
         </div>
       </div>
@@ -30,53 +30,23 @@
 
 <script>
 import Service from "@/components/servicios_home.vue";
-import TablePrecios from "@/components/tabla_precios_diseno_web.vue";
-
 
 export default {
   name: "home",
   components: {
-    Service,
-    TablePrecios
+    Service
   }
 };
 </script>
 
 
 <style scoped>
-.home {
-  padding-top: 200px;
-  padding-bottom: 100px;
-}
-h2 {
-  font-size: 60px;
-  text-align: left;
-  padding-top: 60px;
-  color: #FCFCFC;
-  font-weight: 700;
-  font-family: 'Montserrat', sans-serif;
-}
-img {
-  max-width: 100%;
-  padding-top: 20px;
-}
 
-button {
-  border: none;
-  background: #fcfcfc;
-  color: #1a1f35;
-  border-radius: 100px;
-  padding: 10px 40px;
-}
-
-.calltoaction{
-  padding-top: 100px;
-  padding-bottom: 50px;
-}
+section{padding: 60px 0;}
+.home {padding-top: 200px;}
+button {border: none;background: #fcfcfc;color: #1a1f35;border-radius: 100px;padding: 10px 40px;}
 
 @media(max-width:768px){
-    h2{
-        font-size: 45px;
-    }
+    .home {padding-top: 100px;}
 }
 </style>

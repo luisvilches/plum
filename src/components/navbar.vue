@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="../assets/logo_vms_white.png" class="img-fluid" alt>
+        <img src="../assets/logo_plumtech.png" class="img-fluid" alt> 
       </a>
       <button
         class="navbar-toggler"
@@ -24,17 +24,6 @@
           <li class="nav-item active">
             <router-link class="nav-link" to="/nosotros">¿Quienes Somos?</router-link>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Nuestros Servicios
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <router-link class="dropdown-item" to="/rrhh">Outsourcing RRHH</router-link>
-              <router-link class="dropdown-item" to="/it">Outsoutcing IT</router-link>
-              <div class="dropdown-divider"></div>
-              <router-link class="dropdown-item" to="/digital">Servicios Digitales</router-link>
-            </div>
-          </li>
           <li class="nav-item">
             <router-link class="nav-link" to="/about">Contacto</router-link>
           </li>
@@ -55,13 +44,17 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+@import url('https://fonts.googleapis.com/css?family=Gugi|Nunito|Poppins');
 img {
-  max-width: 150px;
+  max-width: 200px;
+  padding-top:0; 
 }
 nav {
   padding: 20px 0;
   background: #1A1F35;
 }
+
+.navbar-brand{font-size: 30px; font-family: 'Nunito', sans-serif;}
 
 ul li .nav-link a,ul li .nav-link{color: #ffffff!important;}
 .nav-item{margin: 0 20px;}
